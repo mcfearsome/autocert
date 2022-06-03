@@ -144,7 +144,7 @@ webhooks:
     clientConfig:
       service:
         name: autocert
-        namespace: step
+        namespace: devops
         path: "/mutate"
       caBundle: $(cat $(step path)/certs/root_ca.crt | base64 | tr -d '\n')
     rules:
